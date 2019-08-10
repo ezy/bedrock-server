@@ -1,0 +1,10 @@
+version: "2"
+services:
+  minecraft:
+    image: roemer/bedrock-server:latest
+    restart: unless-stopped
+    volumes:
+      - ./config:/bedrock-server/config
+      - ./worlds:/bedrock-server/worlds
+    ports:
+      - "19132:19132/udp"
