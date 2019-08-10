@@ -5,6 +5,9 @@ Run a bedrock server in a Docker container.
 This Docker image will download the Bedrock Server app and set it up, along with its dependencies.
 
 ## Usage
+### Run from docker-compose
+1. git clone
+2. `docker-compose up`
 ### New installation
 1. Prepare the persistent volumes:
     1. Create a volume for the configuration:<br/>
